@@ -64,6 +64,12 @@ h3{
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width:600px){
+    h3{
+        display: none;
+    }
+}
+
 .form-cta{
     margin-bottom:10px;
 }
@@ -92,6 +98,53 @@ h3{
     width: 50%
 }
 
+#section-middle-image img {
+    width: 60%;
+    z-index: 2;
+    /* position: absolute; */
+    text-align: center;
+  }
+  
+  .wave {
+    /* padding: 200px; */
+    text-align: center;
+  }
+  
+  
+  /*========== wave not complete ========*/
+  
+  .pattern {
+    height: 300px;
+    position: relative;
+    background-color: var(--purple);
+    background-image: linear-gradient(
+      315deg,
+      var(--purple) 0%,
+      var(--purple) 74%
+    );
+  }
+  
+  .pattern:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    background: url(https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pattern{
+      height: 100px;
+    }
+  
+    .pattern:before {
+      height: 100px;
+    }
+  }
 
 /* Section Articles */
 
@@ -100,9 +153,24 @@ h3{
     width: 100%;
 }
 
+@media only screen and (max-width:600px) {
+    #section-articles{
+    flex-direction:column;
+    align-items:center;
+    }
+}
+
 article{
     padding:40px
 }
+
+@media only screen and (max-width:600px){
+    article{
+        padding: 3%;
+        max-width: 70%;
+    }
+}
+
 
 article h4{
 font-size: 12px;
@@ -145,20 +213,18 @@ background-color: var(--gray-light);
 
 span {
     text-transform: uppercase;
+}
 
+@media only screen and (max-width:600px){
+    #section-testimonials{
+        font-size:10px;
+    }
+    #section-testimonials h4 {
+        font-size: 14px;
+}
 }
 
 /* =========FOOTER STYLES========= */
-/* footer{
-    border: 2 blue solid;
-} */
-
-/* footer ul {
-    display: flex;
-    justify-content: space-around;
-} */
-
 footer ul li {
     color: var(--purple);
-    font-size: 10px;
-  }
+    font-size: 10px;}
