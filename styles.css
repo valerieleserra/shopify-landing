@@ -7,49 +7,56 @@
     box-sizing: inherit;
 }
 
-/* site variables here */
+/* ========site variables======== here */
 :root{
     --purple: #515fbc;
     --gray-light:#8e99a1;
     --blue-dark:#1e262f;
 }
 
+
+
 body{
-    background-color:white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
-section{
-    border: 2px yellow solid;
-}
-footer{
-    border: 2px rgb(43, 96, 240) solid;
+li{
+    list-style-type:none
 }
 
+/* section{
+    /* border: 2px yellow solid; */
 
 /*================Header================*/
 header{
-    border: 2px purple solid;
     background-color: #515fbc;
     height: 70px;
-
 }
 
 
 .logo > img{
     width:80px;
-    margin:30px;
+    margin:30px 0;
+}
+
+/* HERO */
+
+#section-hero small{
+    font-size: 9px;
+    font-weight: 100;
 }
 
 #section-hero{
     background-color: var(--purple);
     color: white;
+    padding-bottom: 10px;
 }
+
 
 h1{
     font-weight: 500;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 h3{
@@ -57,13 +64,33 @@ h3{
     margin-bottom: 10px;
 }
 
+.form-cta{
+    margin-bottom:10px;
+}
+
+.form-cta input{
+    border: 3px solid var(--gray-light);
+    border-radius: 3px;
+    width: 250;
+    padding: 7px;
+}
+
+.form-cta button{
+    color: white;
+    background-color: var(--blue-dark);
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid var(--blue-dark);
+    font-size: 12px;
+
+}
+
 /* MIDDLE SECTION IMAGE */
 
 #middle-section-image{
     background-color: var(--purple);
-    height: 700px;
+    width: 50%
 }
-
 
 
 /* Section Articles */
@@ -77,7 +104,61 @@ article{
     padding:40px
 }
 
+article h4{
+font-size: 12px;
+}
+
 article p {
     color: var(--gray-light);
     padding: 12px 0
 }
+
+hr{
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.btn-custom{
+    background-color: var(--purple);
+    padding: 10px 20px;
+    margin: 3rem 0;
+    border: none;
+}
+
+.btn-custom:hover{
+background-color: var(--gray-light);
+}
+
+
+/* ==========SECTION CLIENTS===========*/
+#section-clients img{
+    width:70px;
+    margin: 2rem 4px;
+}
+
+/*========== TESTIMONIALS=========== */
+#section-testimonials{
+    margin-top: 3rem;
+}
+
+span {
+    text-transform: uppercase;
+
+}
+
+/* =========FOOTER STYLES========= */
+/* footer{
+    border: 2 blue solid;
+} */
+
+/* footer ul {
+    display: flex;
+    justify-content: space-around;
+} */
+
+footer ul li {
+    color: var(--purple);
+    font-size: 10px;
+  }
